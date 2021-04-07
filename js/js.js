@@ -28,7 +28,7 @@
 
                 modal.trigger('closeModal');
 
-                let next = modal.attr('data-model-next') ?? '';
+                let next = modal.attr('data-modal-next') ?? '';
 
                 if (next.length > 0) {
                     $(next).trigger('openModal');
