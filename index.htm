@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <script src="./js/jquery-3.1.1.min.js"></script>
+        <script src="./js/js.js"></script>
+    </head>
+    <body>
+
+
+        <div class="container">
+            <p>Какой-то текста на странице</p>
+            <p>
+                <a href="#" data-modal-link="#modal-1">Открыть всплывающее окно</a>
+            </p>
+        </div>
+
+
+        <div id="modal-1" class="modal" data-model-next="#modal-2">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <a href="#" class="close">Закрыть</a>
+
+                <h3>Первое окно</h3>
+                <p>Текст во всплывающем окне</p>
+            </div>
+        </div>
+
+
+        <div id="modal-2" class="modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <a href="#" class="close">Закрыть</a>
+
+                <h3>Второе окно</h3>
+                <p>Текст во втором всплывающем окне</p>
+            </div>
+        </div>
+
+
+    </body>
+</html>
